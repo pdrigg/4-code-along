@@ -1,0 +1,94 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e8eee5;
+  color: #222;
+}
+
+header {
+  background-color: #174a32;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #e8cc76;
+}
+
+nav {
+  background-color: #286346;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #174a32;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+article {
+  background-color: white;
+  border: 1px solid #174a32;
+  padding: 15px;
+}
+
+footer {
+  background-color: #174a32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav a {
+    display: inline-block;
+  }
+
+}
+
+/* Second Media Query - Desktop */
+
+@media screen and (min-width: 900px) {
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+}
